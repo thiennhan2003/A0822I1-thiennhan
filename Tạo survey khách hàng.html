@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo survey khách hàng </title>
+    <style>
+        table{
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 90%;
+        }
+        td, th, {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        </style>
+</head>
+<h1> Market Research Survey </h1>
+<b> Please take a few moments to complete this satisfaction survey </b><br>
+<form><br>
+    <b>What is your age range?</b><br>
+    <select style="width: 50%">
+        <option value="18-24" >
+            <span class="notranslate">18 - 24</span>
+        </option>
+        <option value="25-30" >
+            <span class="notranslate">25 - 30</span>
+        </option>
+        <option value="35++" >
+            <span class="notranslate">35++</span>
+        </option>
+    </select><br>
+    <br>
+    <b>What is your yearly income range?</b><br>
+    <select style="width: 50%">
+        <option value="$ - $25000">
+            <span class="">$ - $25000 </span>
+        </option>
+        <option value="$25001 - $50000">
+            <span class="">$25.001 - $50.000 </span>
+        </option>
+        <option value="$100000++">
+            <span class="">$100.000++</span>
+        </option>
+    </select><br>
+    <br>
+<body>
+<b> Gender Identity</b><br>
+<input type="radio" value="Male" name="rd">Male<br>
+<input type="radio" value="Female"name="rd">Female <br>
+<br>
+<b> Which of the following products have your purchased in the last 2 months. Please check all the apply.</b><br>
+<input type="checkbox" name="Product" value="Product 1"> Product 1<br>
+<input type="checkbox" name="Product" value="Product 2"> Product 2<br>
+<input type="checkbox" name="Product" value="Product 3"> Product 3<br>
+<br>
+<b> How often would you use our new product?</b><br>
+<input type="radio" value="Daily" name="rd">Daily<br>
+<input type="radio"value="Weekly" name="rd">Weekly<br>
+<input type="radio" value="Monthly" name="rd">Monthly<br>
+<br>
+<b> What would you pay for the new product?</b>
+<p>&dollar;<textarea> </textarea> </p>
+<p> Dollars or Cents </p>
+<b> What features would you like to see in the new product</b>
+<br>
+<textarea> </textarea>
+<br>
+<p> Please rate your level of agreement with the following statements</p><br>
+<table>
+    <tr>
+        <th></th>
+        <th>Strongly Disagree</th>
+        <th>Disagree</th>
+        <th>Agree</th>
+        <th>Strongly Agree</th>
+    </tr>
+    <tr>
+        <td>Our products are priced fairly</td>
+        <td> <input type="radio"</td>
+        <td> <input type="radio"</td>
+        <td> <input type="radio"</td>
+        <td> <input type="radio"</td>
+    </tr>
+    <tr>
+        <td>Our products are high quality.</td>
+        <td> <input type="radio"</td>
+        <td> <input type="radio"</td>
+        <td> <input type="radio"</td>
+        <td> <input type="radio"</td>
+    <tr>
+        <td> You would recommend our products to a friend or coworker.</td>
+        <td> <input type="radio"</td>
+        <td> <input type="radio"</td>
+        <td> <input type="radio"</td>
+        <td> <input type="radio"</td>
+</table>
+        <br>
+<button type="submit">Submit</button>
+</body>
+</html>
