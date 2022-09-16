@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> biến, kiểu dữ liệu và toán tử</title>
+    <style>
+        body{
+            color: aqua;
+            background-color: saddlebrown;
+        }
+    </style>
+</head>
+<body>
+<br>
+<th> Tính điểm trung bình 3 môn </th><br>
+<input id="num1" placeholder="nhập điểm môn vật lý">
+<input id="num2" placeholder="nhập điểm môn hóa học">
+<input id="num3" placeholder="nhập điểm môn sinh học"><br><br>
+<button onclick="tinhtong()"> Tính tổng TB</button><br>
+<p id="ketQua1"></p>
+<script>
+    function tinhtong() {
+        let n1 = +document.getElementById("num1").value;
+        let n2 = +document.getElementById("num2").value;
+        let n3 = +document.getElementById("num3").value;
+        let sum = (n1 + n2 + n3) / 3
+        document.getElementById("ketQua1").innerText = "Tính tổng TB là" + sum;
+    }
+</script>
+<br>
+<th> chu vi hình tròn </th><br>
+<input id="num4" placeholder="nhập bán kính"><br>
+<br>
+<button onclick=" tinhchuvi()"> tính bán kính hình tròn</button><br>
+<p id="ketQua2"></p>
+<script>
+    function tinhchuvi() {
+          let n4 =+document.getElementById("num4").value;
+          let perimeter = 2*n4 * 3.14;
+        document.getElementById("ketQua2").innerText = "chu vi hình tròn là:" +perimeter;
+    }
+</script>
+<th> diện tích hình tròn </th><br>
+<input id="num5" placeholder=" nhập số"><br>
+<br>
+<button onclick="tinhdientich()"> diện tích hình tròn</button>
+<p id="ketQua3"></p>
+<script>
+    function tinhdientich() {
+        let n5 =+document.getElementById("num5").value;
+        let area = n5 * 3.14 * n5;
+        document.getElementById("ketQua3").innerText = " diện tích hình tròn là:"+area;
+    }
+</script>
+<input id="num6" placeholder="nhập độ"><br>
+<br>
+<th> chuyển đổi</th><br>
+<button onclick="chuyendoi()"> chuyển đổi</button>
+<p id="ketQua4"></p>
+<script>
+    function chuyendoi() {
+        let celsius =+document.getElementById("num6").value;
+        let Fahrenheit = ( 9 * celsius * 160)/5;
+        document.getElementById("ketQua4").innerText = " Độ F là:"+Fahrenheit;
+    }
+</script>
+</body>
+</html>
