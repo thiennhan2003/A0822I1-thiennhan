@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title> câu lệnh switch case - hoàng thiện nhân</title>
+</head>
+<input type="text" id="so ngay">
+<button onclick="ngay()" id="ngaythang">Tính số ngày</button><br>
+<p id="answer"> Kết quả:</p>
+<script>
+    function ngay(){
+        let month = +document.getElementById("so ngay").value;
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                month===1;
+                document.getElementById("answer").innerText = (' Tháng: ' + month +' có 31 ngày');
+                break;
+            case 2:
+                month===2;
+                document.getElementById("answer").innerText = ('Tháng: ' + month + 'có 28 hoặc 29 ngày' );
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                month===3;
+                document.getElementById("answer").innerText = ('Tháng: '+ month +' có 30 ngày');
+                break;
+            default:
+                document.getElementById("answer").innerText = ('Tháng: '+ month +' không xác định');
+        }
+    }
+</script>
+<body>
+
+</body>
+</html>
