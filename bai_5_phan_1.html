@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5 phần 1</title>
+</head>
+<script>
+    let kiemtra = prompt("nhập điểm bài kiểm tra");
+    let giuaki = prompt("nhập điểm thi giữa kì");
+    let cuoiki = prompt("nhập điểm cuối kì");
+    let sum = (kiemtra*20/100)+(giuaki*35/100)+(cuoiki*50/100);
+    if (sum >= 8) {
+        alert("Xếp lực : học sinh giỏi");
+    }else if (sum <= 8) {
+        alert("Xếp lực : học sinh khá");
+    }else if (sum <=6) {
+        alert("Xếp lưc : học sinh trung bình");
+    }else if (sum <=5){
+        alert("Xếp lập : học sinh yếu");
+    }
+</script>
+<body>
+</body>
+</html>
