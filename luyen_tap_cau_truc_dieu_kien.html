@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2 điều kiện để vào lớp 10</title>
+</head>
+<h2> Điều kiện để vào lớp 10 </h2>
+<p> Nhập số tuổi </p>
+<input id="age" value />
+<button onclick="age()"> TEST </button>
+<p id="demo"></p>
+<script>
+    function age() {
+        let age = document.getElementById("age").value;
+        let voteable = (age == 16) ? " đủ điều kiện" : " không đủ điều kiện";
+        document.getElementById("demo").innerHTML = voteable + " ĐẠT ";
+    }
+</script>
+<body>
+
+</body>
+</html>
