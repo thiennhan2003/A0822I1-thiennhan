@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 7 phần 2</title>
+</head>
+<body>
+<script>
+    let x = +prompt("Nhập x:");
+    let y = +prompt("Nhập y: ");
+    let z = +prompt("Nhập z: ");
+   delta = y*y - (4*x*z);
+   if (delta > 0) {
+       alert("Phương trình có 2 nghiệm phân biệt đó là : x1 = " + (-y - Math.sqrt(delta)) / (2 * x));
+       alert("Và x2 = " + ((-y + Math.sqrt(delta))/(2*x)));
+   }else if (delta == 0) {
+       alert("Phương trình có 2 nghiệm phân biệt là x1 = x2 = " + (-y) / (2 * x));
+   }else{
+       alert("Phương trình vô nghiệm");
+   }
+</script>
+</body>
+</html>

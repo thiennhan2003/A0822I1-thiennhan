@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3 phần 2</title>
+</head>
+<body>
+<p>Tính chu vi hình vuông</p>
+<input id = "n1" placeholder="nhập cạnh a"><br>
+<button onclick=" tinhchuvi()"> kết quả </button><br>
+<br>
+<br>
+<p id="ketqua">Kết quả tính chu vi là:</p>
+<script>
+    function tinhchuvi() {
+        let n1 =+document.getElementById("n1").value;
+        let perimeter = n1 * 4;
+        document.getElementById("ketqua").innerText = "chu vi hình vuông là:" +perimeter;
+    }
+</script>
+</body>
+</html>
