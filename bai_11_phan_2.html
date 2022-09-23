@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 10 phần 2</title>
+</head>
+<body>
+<script>
+    let thue = 0;
+    let thuesuat = +prompt("Nhập thue");
+    if (thuesuat < 30) {
+        thue = thuesuat * 20/100;
+        alert("Thuế thu nhập cá nhân không cư trú");
+    }else if(thuesuat < 40) {
+        thue = thuesuat * 25/100 ;
+    }else if(thuesuat < 50) {
+        thue = thuesuat * 30/100;
+    }else {
+        thue = thuesuat * 50/100;
+    }
+    alert("giá tiền điện là : " + thue + "VND");
+</script>
+</body>
+</html>
