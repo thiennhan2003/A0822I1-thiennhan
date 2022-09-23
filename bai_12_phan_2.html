@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 12 phần 2</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            color: #f30707;
+        }
+    </style>
+</head>
+<body>
+<th> Chương trình tính lãi ngân hàng</th><br>
+<br>
+<input id="num1" placeholder="Nhập số tiền ban đầu">
+<input id="num2" placeholder="Nhập số tháng cho vay">
+<input id="num3" placeholder="Nhập số lãi suất hàng tháng">
+<button onclick ="ketqua()">Kết quả</button>
+<p id="ketqua6"> Kết quả là :</p>
+<script>
+    function ketqua(){
+        let n1 = +document.getElementById("num1").value;
+        let n2 = +document.getElementById("num2").value;
+        let n3 = +document.getElementById("num3").value;
+        let sum = (n1 * (1 + n3) ^ n2);
+        document.getElementById("ketqua6").innerText = " Lãi ngân hàng là " + sum + "VND";
+    }
+</script>
+</body>
+</html>
