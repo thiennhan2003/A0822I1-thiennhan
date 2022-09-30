@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<th> GUESS NUMBER GAME?? </th><br>
+<br>
+<input id = "Play" type="button" onclick = "play()" value="Play">
+<script>
+    function play() {
+        let n1 = +prompt("nhập số đầu tiên ")
+        let n2 = +prompt("nhập số thứ hai")
+        let guess = +prompt(" nhập giá trị cần đoán ")
+        let random = Math.floor(Math . random() * ( n1 - n2 ) + n2);
+        while (true){
+            if ( guess == random ) {
+                alert(" bạn đã đoán đúng");
+                alert(" kết thúc lượt chơi");
+                break;
+            }else if( random < guess){
+                alert("Số của bạn vừa nhập lớn hơn giá trị cần đoán");
+                guess = +prompt(" Vui lòng nhập lại");
+                break;
+            }else if( random > guess){
+                alert(" Số của bạn vừa nhập bé hơn giá trị cần đoán");
+                guess = +prompt("Vui lòng nhập lại");
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
