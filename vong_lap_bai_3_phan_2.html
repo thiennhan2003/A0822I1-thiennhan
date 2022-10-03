@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> in tam giác vuông</title>
+</head>
+<body>
+<script>
+    //hình 1
+    let a = +prompt("Nhập giá trị 1 :");
+    for (let i = 0; i <= a; i++){
+        for (let j = 1; j <= i; j++){
+            document.writeln("*")
+        }
+        document.write("<br>")
+    }
+    //hình 2
+    document.write("<br>")
+    let b = +prompt("Nhập giá trị 2:");
+    for (let i = b ; i >= 1; i--){
+        for (let j = 1; j <= i; j++){
+            document.writeln("*")
+        }
+        document.write("<br>")
+    }
+    //hình 3
+    document.write("<br>")
+    let c = +prompt("Nhập giá trị 3 :");
+    for (let i = 0 ; i <= c; i++){
+        for (let j = i; j <= c ; j++){
+            document.writeln("&nbsp");
+        }
+        for (let j = 0; j <= i; j++){
+            document.write("*");
+        }
+        document.write("<br>")
+    }
+    //hình 4
+    document.write("<br>")
+    let d = +prompt("Nhập giá trị 4 :");
+    for (let i = 0 ; i <=  d; i++){
+        for (let j = 0; j <=  i; j++){
+            document.writeln("&nbsp")
+        }
+        for (let j = i; j <=  d; j++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>
