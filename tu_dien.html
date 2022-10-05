@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> từ điển</title>
+</head>
+<body>
+<input id="translation" type= "text" placeholder=" nhập từ muốn dịch " >
+<input type ="button" onclick ="Transl()" value="Transl">
+<p id = "result"></p>
+<script>
+    function Transl() {
+        let transl = document.getElementById('translation').value;
+        let english = ['human', 'dog', 'action', 'cat', 'line up', 'sorry'];
+        let Vietnam = ['con người', 'con chó', 'hành động', 'con mèo', ' sắp đặt', 'xin lỗi'];
+        let std = false;
+        for (let i = 0; i < english.length; i++){
+            if (transl === english[i]) {
+                document.getElementById('result').innerText = 'Dịch tiếng anh qua tiếng việt: ' + Vietnam[i];
+                std = true;
+            }
+    }
+    if( std === false){
+                document.getElementById('result').innerText ='Không tìm thấy ';
+            }
+        }
+</script>
+</body>
+</html>
