@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> khởi nguyên 10 phần tử</title>
+</head>
+<body>
+<script>
+    let myArray = [], std = 0;
+    for (let i = 0; i < 10; i++) {
+        myArray[i] = +prompt('nhập số phần tử '+i);
+    }
+    for (let i = 0; i < 10 ; i++) {
+        if (myArray[i] >=10 ){
+            std++
+        }
+    }
+    document.write('Số phần tử là >=10: '+ std + ' số ');
+    console.log(myArray);
+</script>
+</body>
+</html>

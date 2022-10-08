@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> sắp xếp </title>
+</head>
+<body>
+<script>
+    let number = +prompt("nhập dãy số trong mảng");
+    sort = [];
+    for (let i = 0; i <= number; i++) {
+        sort[i] = +prompt("nhập số muốn sắp xếp: " +i);
+    }
+    let std;
+    for (let i = 0; i < sort.length; i++) {
+        for (let j = i + 1; j < sort.length; j++) {
+            if (sort[i] < sort[j]) {
+                std = sort[i];
+                sort[i] = sort[j];
+                sort[j] = std;
+            }
+        }
+    }
+    sort.shift();
+    document.write("Mảng sau khi sắp xếp là : ");
+    document.write(sort);
+</script>
+</body>
+</html>

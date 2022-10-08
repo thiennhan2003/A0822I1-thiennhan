@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [];
+    for (let i = 0; i <= 10; i++){
+        number[i] = +prompt("nhập số trong chuỗi : "+i);
+    }
+    count = 0;
+    for (let i = 0; i < number.length ; i++) {
+        if (number[i] < 0) {
+            count++;
+        }
+    }
+        document.write(" gồm những số nguyên âm là: "+count);
+</script>
+</body>
+</html>

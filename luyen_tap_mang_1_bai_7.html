@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra mảng đã xóa</title>
+</head>
+<body>
+<p> mảng bị xóa là: </p>
+<script>
+    let number = +prompt("nhập dãy số phần tử vào mảng");
+    array = [];
+    for (let i = 0; i < number ; i++) {
+       array[i] = +prompt("nhập số phần tử thứ : " +i );
+    }
+    let Find_number = +prompt("nhập số muốn tìm kiếm:  ");
+    let Find = -1 ;
+    for (let i = 0; i < array.length ; i++) {
+        if( array[i] === Find_number){
+        Find = i;
+     }
+    }
+    for (let i = Find ; i < array.length ; i++) {
+        array[i] = array[i + 1];
+    }
+    document.write(array);
+</script>
+</body>
+</html>
