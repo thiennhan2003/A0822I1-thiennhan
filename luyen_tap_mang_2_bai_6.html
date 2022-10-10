@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> thay kí tự</title>
+</head>
+<body>
+<script>
+    let symbol = prompt("nhập mảng kí tự");
+    let p = [];
+    for (let i = 0; i < symbol ; i++) {
+        p[i] = prompt("nhập phần tử thứ " + i + " của mảng");
+    }
+    document.write("mảng vừa nhập là: " +p+ "<br>");
+    for (let i = 0; i < p.length ; i++) {
+        if (p[i] === "-"){
+            p[i] = "_";
+        }
+    }
+    document.write(" mảng sau khi được thây thế là: " +p);
+</script>
+</body>
+</html>
