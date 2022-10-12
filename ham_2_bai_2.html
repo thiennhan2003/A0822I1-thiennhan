@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> hàm tính diện tích hình tròn và chu vi hình tròn</title>
+</head>
+<body>
+<script>
+    // diện tích hình tròn
+    let numR = +prompt("nhập bán kính");
+    let pi = 3.14;
+    function dientich() {
+        area = Math.pow(numR,2)*pi;
+        document.write("Diện tích hình tròn là: " +area);
+        return area;
+    }
+    dientich();document.write("<br>")
+    function chuvi() {
+        perimeter = 2*pi*numR;
+        document.write(" Chu vi hình tròn là: " +perimeter);
+        return perimeter;
+    }
+    chuvi();
+</script>
+</body>
+</html>

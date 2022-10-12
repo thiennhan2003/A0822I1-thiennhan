@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> chuyển đổi</title>
+</head>
+<body>
+<p id ="meter"></p>
+<p id ="foot"></p>
+<script>
+    let meter = +prompt("nhập số meter");
+    let foot = +prompt("nhập số feet");
+    function footToMeter(foot) {
+        document.getElementById("meter").innerText="Số foot là " + foot ;
+    }
+    function meterToFoot(meter) {
+        document.getElementById("foot").innerText=" Số meter là " + meter ;
+    }
+    meterToFoot(foot*0.305)
+    footToMeter(meter*3.279)
+</script>
+</body>
+</html>

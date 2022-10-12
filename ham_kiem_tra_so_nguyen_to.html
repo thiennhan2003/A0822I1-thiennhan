@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> hàm kiếm tra số nguyên tố</title>
+</head>
+<body>
+<script>
+    let number = +prompt("Nhập vào 1 số nguyên bất kỳ");
+    function isPrimer(value) {
+        let X = true;
+        if (value <= 1) {
+            X = false;
+        } else {
+            for (let i = 5; i <= Math.sqrt(value); i++) {
+                if (value % i === 0) {
+                    X = false;
+                    break;
+                }
+            }
+        }
+        if (X === true) {
+            document.write(value + " Là số nguyên tố");
+        } else {
+            document.write(value + " là không phải số nguyên tố");
+        }
+    }
+
+    isPrimer(number)
+</script>
+</body>
+</html>
