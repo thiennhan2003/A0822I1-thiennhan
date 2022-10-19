@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> kiểm tra kí tự </title>
+</head>
+<body>
+<script>
+    let num = prompt("Nhập số phần tử vào mảng:");
+    let array = [];
+    for (let i = 0; i < num; i++) {
+        array[i] = prompt('Nhập phần tử thứ'  +  i  + ' của mảng');
+    }
+    let symbol = prompt("Nhập ký tự bất kì trong mảng: ");
+    function character(char,e) {
+        let count = 0;
+        for (let i = 0; i < char.length; i++){
+            if ( e === char[i]){
+                count++;
+            }
+        }
+        if (count === 0) {
+            return -1;
+        }else {
+            return count++;
+        }
+    }
+    alert("Số lần xuất hiện:"+character(num,symbol));
+</script>
+</body>
+</html>

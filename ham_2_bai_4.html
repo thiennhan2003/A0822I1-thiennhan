@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> kiểm tra kí tự </title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập kí tự ");
+    function symbol(s) {
+        if (s >= '0' || s <= '9') {
+        document.write("là kí tự số");
+        return true;
+    }else{
+        document.write("không phải là kí tự số");
+        return false;
+    }
+    }
+    symbol(a);
+</script>
+</body>
+</html>

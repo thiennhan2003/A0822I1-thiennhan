@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> tính giai thừa của 1 số</title>
+</head>
+<body>
+<script>
+    let n = +prompt(" nhập số giai thừa: ");
+    let gt = 1;
+    function ketqua() {
+        for (let i = 0; i < n; i++) {
+            sum = gt * 2;
+            gt++
+        }
+        return gt;
+    }
+    alert(" kết quả là: "+gt);
+    ketqua();
+</script>
+</body>
+</html>
