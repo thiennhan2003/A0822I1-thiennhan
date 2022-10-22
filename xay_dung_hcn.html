@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="myCanvas" width="350" height="400"></canvas>
+<script>
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        getarea() {
+            let S = this.width * this.height;
+            return S;
+        }
+
+        getperimeter() {
+            let P = (this.width + this.height) * 2
+            return P;
+        }
+
+        getWidth() {
+            return this.width;
+        }
+
+        getHeight() {
+            return this.height;
+        }
+    }
+    function input(){
+        let width=+prompt('nhập chiều dài của hình chữ nhật: ');
+        let height=+prompt('nhập chiều rộng của hình chữ nhật: ');
+        let num1 = [width,height]
+        return num1;
+    }
+    let num2 = input()
+    let rectangle1 = new Rectangle(num2[0], num2[1])
+    console.log('chiều dài là: '+rectangle1.getWidth()+'</br> chiều rộng là: '+rectangle1.getHeight());
+    console.log('diện tích HCN là:  '+rectangle1.getarea()+'</br>')
+    console.log('Chu vi HCN là : '+rectangle1.getperimeter())
+    let canvas = document.getElementById("myCanvas");
+    if (canvas.getContext) {
+        let ctx = canvas.getContext("2d");
+        ctx.lineWidth = "2";
+        ctx.strokeStyle = "blue";
+        ctx.strokeRect(5,5,rectangle1.getWidth(),rectangle1.getHeight());
+    }
+</script>
+</body>
+</html>
