@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(C) {
+            this.C = C;
+        }
+        getF(){
+            return (this.C * 9/5) + 32;
+        }
+        getKenvin(){
+            return this.C + 273;
+        }
+    }
+    let temperature = new Temperature(2);
+    let DoF = temperature.getF();
+    let kenvin = temperature.getKenvin();
+    console.log("Độ F= "+ DoF + "; KenVin = " + kenvin);
+</script>
+</body>
+</html>
